@@ -8,6 +8,8 @@ services:
         volumes:
             - ./index.js:/myfolder/index.js
             - ./email.js:/myfolder/email.js
+            # 앞의 폴더가 변경되면 뒤의 경로의 내용이 전달되도록
+            # src폴더를 만들어서 그걸 통으로 넘기는 것도 가능함
         ports:
             - 3000:3000
 
